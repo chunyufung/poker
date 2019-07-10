@@ -1,0 +1,76 @@
+
+@mixin m($num: 1) {
+  margin: $num * 0.1rem;
+}
+
+@mixin mt($num: 1) {
+  margin-top: $num * 0.1rem;
+}
+
+@mixin mb($num: 1) {
+  margin-bottom: $num * 0.1rem;
+}
+
+@mixin ml($num: 1) {
+  margin-left: $num * 0.1rem;
+}
+
+@mixin mr($num: 1) {
+  margin-right: $num * 0.1rem;
+}
+
+@mixin p($num: 1) {
+  padding: $num * 0.1rem;
+}
+
+@mixin pr($num: 1) {
+  padding-right: $num * 0.1rem;
+}
+
+@mixin pl($num: 1) {
+  padding-left: $num * 0.1rem;
+}
+
+@mixin pt($num: 1) {
+  padding-top: $num * 0.1rem;
+}
+
+@mixin pb($num: 1) {
+  padding-bottom: $num * 0.1rem;
+}
+
+@mixin between($center: initial, $space: space-between) {
+  display: flex;
+  align-items: $center;
+  justify-content: $space;
+}
+
+@mixin around($center: initial) {
+  display: flex;
+  justify-content: space-around;
+  align-items: $center;
+}
+
+@mixin center($center: initial) {
+  display: flex;
+  justify-content: center;
+  align-items: $center;
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin transition($time: 0.5) {
+  transition: all $time * 1s ease;
+}

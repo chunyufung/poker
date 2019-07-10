@@ -1,5 +1,8 @@
 # poker
 
+##
+实现了扑克牌游戏“牛牛”的规则
+
 ## Project setup
 ```
 yarn install
